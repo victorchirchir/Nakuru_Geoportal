@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="keyword" content="Geospatial , webmap, GIS">
+    <meta name="description" content="GIS Web Development">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./Leaflet/leaflet.css">
+    <title>Web Map :: Home</title>
+</head>
+<body>
+
+    <div class="container-fluid" style="padding: 0px;">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <img src="./Images/geodevPics.jpg" style="margin:0 1em; height: 65px;padding: 0; ">
+            <a class="navbar-brand" href="#">Nakuru Geoportal</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">About Us</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
+                    Dropdown
+                  </a>
+                  <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </div>
+                </li>
+                
+              </ul>
+              <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+              </form>
+            </div>
+        </nav>
+        <div class="col-md-12" style="padding: 0px;">
+            <div class="map" id="map">
+                <div class="toolbox">
+                    <div class="card">
+                      <div class="card-header">
+                        <p>Map Layers<p>
+
+                      </div>
+                      <div class="card-body">
+                        <!-- <ul class="list-group list-group-flush">
+                          <li class="list-group-item">
+                            Layer 1
+                            <label class="switch">
+                              <input class="success" type="checkbox" name="layer1">
+                              <span class="slider round"></span>
+                            </label>
+                          </li>
+                        </ul> -->
+
+                        <div class="custom-control custom-switch">
+                          <input type="checkbox" class="custom-control-input" onclick="AddWards()" id="wards">
+                          <label class="custom-control-label" for="wards">Wards</label>
+                        </div>
+
+                        <div class="custom-control custom-switch">
+                          <input type="checkbox" class="custom-control-input universities" onchange="AddUniLayer()"  id="universities">
+                          <label class="custom-control-label" for="universities">Universities</label>
+                        </div>
+
+                        <div class="custom-control custom-switch">
+                          <input type="checkbox" class="custom-control-input " onchange="AddColleLayer()"  id="colleges">
+                          <label class="custom-control-label" for="colleges">Colleges</label>
+                        </div>
+
+                        <div class="custom-control custom-switch">
+                          <input type="checkbox" class="custom-control-input" onclick="AddHealthFacilities()" id="healthFacilities">
+                          <label class="custom-control-label" for="healthFacilities">Health Facilities</label>
+                        </div>
+
+                        <div class="custom-control custom-switch">
+                          <input type="checkbox" class="custom-control-input" onclick="AddSchools()" id="schools">
+                          <label class="custom-control-label" for="schools">Schools</label>
+                        </div>
+
+                        <div class="custom-control custom-switch">
+                          <input type="checkbox" class="custom-control-input" onchange="AddminorRoads()" id="minorRoads">
+                          <label class="custom-control-label" for="minorRoads">Minor Roads</label>
+                        </div>
+                        <div class="custom-control custom-switch">
+                          <input type="checkbox" class="custom-control-input" onclick="AddmajorRoads()" id="majorRoads">
+                          <label class="custom-control-label" for="majorRoads">Major Roads</label>
+                        </div>
+
+                       
+
+                       
+
+                      </div>
+
+                    </div>
+                    
+                </div>
+                <div id="coordinate"></div>
+            </div>
+            
+
+        </div>
+        
+
+    </div>
+
+    
+
+
+    
+
+
+
+<script type="text/javascript" src="./js/bootstrap.min.js"></script>
+<script type="text/javascript" src="./js/jquery-3.6.1.min.js"></script>
+
+<script src="./Leaflet/leaflet.js"></script>
+<script type="text/javascript" src="./js/leaflet.browser.print.min.js"></script>
+<script src='https://unpkg.com/@turf/turf@6/turf.min.js'></script>
+<script type="text/javascript" src="./data/Nakuru_wards.js"></script>
+<script type="text/javascript" src="./data/Nakuru_Colleges.js"></script>
+<script type="text/javascript" src="./data/Nakuru_Universities.js"></script>
+<script type="text/javascript" src="./data/Nakuru.js"></script>
+
+
+
+<script src="./script.js"></script>
+<script>
+ 
+</script>
+</body>
+</html>

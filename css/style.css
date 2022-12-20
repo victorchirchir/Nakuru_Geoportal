@@ -1,0 +1,67 @@
+
+/* Map  css */
+#map{
+   height: calc(97vh - 81px);
+   position: relative;
+
+
+}
+
+.card{
+   border-radius: 8px;
+   background-color: #fff;
+   border: 0;
+}
+
+.navbar{
+   border: 0.2px solid black;
+   
+}
+.navlink a{
+   margin-left: 2em;
+}
+ 
+.toolbox{
+   width: 200px;
+   min-height: 200px;
+   position: sticky;
+   top: -200px;
+   left: 10PX;
+   background-color:#fff;
+   border: 1px solid #333;
+   border-radius: 8px;
+   margin-top: 1em;
+   z-index: 99999;
+
+}
+#coordinate{
+   position: absolute;
+   background-color: #fff;
+   left: 40%;
+   z-index: 99999;
+   bottom: 1em;
+}
+/* .switch{
+   position: relative;
+   display: inline-block;
+   float: right;
+   width: 45px;
+   height: 20px;
+   margin-bottom: 0px;
+}
+
+.switch input{
+   display: block;
+}
+
+.slider{
+   position: absolute;
+   top: 0;
+   -webkit-transition: .4s;
+   transition: .4s;
+}
+
+.slider::before{
+   position: absolute;
+
+} */

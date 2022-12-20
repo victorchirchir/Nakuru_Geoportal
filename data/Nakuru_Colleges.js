@@ -1,0 +1,6 @@
+var NakuruColleges={"type":"FeatureCollection", "features": [
+{"type":"Feature","geometry":{"type":"Point","coordinates":[35.7323939,-0.2525617]},"properties":{"osm_id":2165018907,"addrcity":"","name":"Stammsor Institute of Bussiness and Technology","source":"Field Survey","capacitype":"","addrfull":"","operatorty":"","amenity":"college","building":""}},
+{"type":"Feature","geometry":{"type":"Point","coordinates":[35.6060996,-0.1522016]},"properties":{"osm_id":3957050611,"addrcity":"","name":"Kenya Forestry College","source":"","capacitype":"","addrfull":"","operatorty":"","amenity":"college","building":""}},
+{"type":"Feature","geometry":{"type":"Point","coordinates":[36.1618559,-0.2930916]},"properties":{"osm_id":4359835427,"addrcity":"","name":"KMA","source":"","capacitype":"","addrfull":"","operatorty":"","amenity":"college","building":""}},
+{"type":"Feature","geometry":{"type":"Point","coordinates":[36.5143572,-0.7259153]},"properties":{"osm_id":5130709522,"addrcity":"","name":"Muthethia Youth Polytechnic","source":"","capacitype":"","addrfull":"","operatorty":"","amenity":"college","building":""}}
+]}
